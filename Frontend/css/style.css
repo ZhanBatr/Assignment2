@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Helvetica Neue', sans-serif;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+
+.carousel-inner{
+	margin-top: 50px;
+}
+
+.form-floating{
+	margin-bottom: 50px;
+}
+
+.row{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: lightslategray;
+	width: 100%;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	position: fixed;
+	top: 0;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.navbar ul{
+	display: flex;
+	list-style-type: none;
+	padding: 10px;
+}
+
+.navbar ul li a{
+	padding: 0 10px;
+	color: white;
+	text-decoration: none;
+	font-size: 1rem;
+	text-transform: uppercase;
+}
+
+.navbar ul li a:hover{
+	color: #ffe926;
+}
+
+.logo{
+	color: white;
+	border: 1px solid white;
+	border-radius: 20px;
+	padding: 5px;
+}
+
+#main-image{
+	width: 100%;
+}
+
+.mainContent{
+	justify-content: space-around;
+	background-color: #3b5ce4;
+	padding-bottom: 20px;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.headings{
+	color: white;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+.main-list {
+	margin: 10px;
+}
+
+.main-list li {
+	margin: 10px;
+	font-size: 15px;
+}
+
+.goods{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.goodsList{
+	font-size: 1.5rem;
+	color: white;
+	margin: 50px;
+
+}
+
+.goodsList th, td, tr{
+	border: 2px solid white;
+	padding: 10px;
+}
+
+.goods button{
+	background-color: darkorange;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.goods button:hover{
+	background-color:  #ffe926;
+}
+
+.registrationForm{
+	display: flex;
+	flex-direction: column;
+}
+
+.registrationForm label{
+	color: white;
+}
+
+.registrationForm input{
+	font-size: 1.5rem;
+}
+
+.registrationForm button{
+	background-color: darkorange;
+	padding: 10px;
+	border: 1px solid white;
+	border-radius: 15px;
+	font-size: 1.5rem;
+	color: white;
+}
+
+.registrationForm button:hover{
+	background-color:  #ffe926;
+}
+
+#about{
+	background-color: #3b5ce4;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutUsText{
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 1.5rem;
+	text-align: center;
+}
+
+.footer{
+	background-color: lightslategray;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer ul li{
+	padding-bottom: 10px;
+}
+
+.footer ul li a{
+	color: white;
+}
+.float-left {
+	float: left;
+}

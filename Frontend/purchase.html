@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Purchase</title>
+    <link rel="shortcut icon" href="img/shop.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Z&B shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="http://localhost:63342/Frontend/main.html?_ijt=hiob9il0ol8215ee3caqi640rv&_ij_reload=RELOAD_ON_SAVE">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="http://localhost:63342/Frontend/purchase.html?_ijt=hcv7fltgjni96sab5trl3kru0j&_ij_reload=RELOAD_ON_SAVE">Make purchase</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="http://localhost:63342/Frontend/sign.html?_ijt=6bltf84730d2e9paljhgmfd68h&_ij_reload=RELOAD_ON_SAVE">Sign in</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+
+<div class="container mainContent">
+<div class="goods" id="goods">
+    <h2 class="headings">Goods</h2>
+
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list" href="#list-home" role="tab" aria-controls="list-home">Моющие средства</a>
+                <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list" href="#list-profile" role="tab" aria-controls="list-profile">Шампунь</a>
+                <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list" href="#list-messages" role="tab" aria-controls="list-messages">Твердое мыло</a>
+                <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list" href="#list-settings" role="tab" aria-controls="list-settings">Порошки</a>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">Наиболее популярными моющими средствами являются: мыло, стиральные порошки, гели для стирки, средства для мытья посуды, средства для мытья пола. К чистящим средствам относятся: чистящие порошки, средства для чистки ковров, средства для туалета и ванной, средства для прочистки труб, универсальные чистящие средства.</div>
+                <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Какой шампунь лучше не брать?
+                    Не стоит пользоваться шампунями, состав которых входят силиконы, минеральные масла. В отличие от растительных, они не впитываются в кожу головы, а остаются на поверхности волос, создавая непроницаемую пленку. В результате — перхоть, зуд, сухость.</div>
+                <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Твердое мыло имеет высокощелочную среду и это сушит кожу, но не воздействует на глубинные слои эпидермиса, не содержит консервантов и синтетических веществ, соответственно, безопаснее для кожи. Жидкое мыло имеет рН, близкий к нейтральному, и не сушит кожу, способно, однако, проникать в более глубокие слои кожи</div>
+                <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">Лучшими из лучших по общему баллу были признаны стиральные порошки для цветного белья двух марок – «Аист» и Burti Color. Они соответствовали не только требованиям действующих норм по качеству и безопасности, но и требованиям опережающего стандарта Роскачества</div>
+            </div>
+        </div>
+    </div>
+
+    <table class="goodsList" >
+        <tr>
+            <th>ID</th>
+            <th>Good name</th>
+            <th>Date of made</th>
+            <th>Price(tg)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Mr Proper</td>
+            <td>6.09.2023</td>
+            <td>1500</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Wash&Go</td>
+            <td>7.09.2023</td>
+            <td>1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Morning Fresh</td>
+            <td>7.09.2023</td>
+            <td>1850</td>
+        </tr>
+    </table>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="img/фери.jfif" class="card-img-top" style="width: 200px" >
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/хеден.jfif" class="card-img-top" style="width: 200px" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/твердоеМыло.webp" style="width: 200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/миф.jpg" style="width: 200px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Миф порошок 4кг</h5>
+                    <h3 class="card-title">4000тг</h3>
+                    <p class="card-text">Стиральный порошок Миф Аквапудра Морозая Свежесть — это новая, лучшая формула Миф для сияющей белизны, с технологией против разводов. Стиральный порошок Миф Аквапудра растворяется едва коснувшись воды, и моментально активируется: удаляет даже трудновыводимые пятна и придает одежде сияющую белизну.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Make a purchase</button>
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Make sure that you are sign in first</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>if not please push that button.</p>
+            <button><a href="sign.html">Sign in</a></button>
+        </div>
+    </div>
+
+
+
+</div>
+</div>
+
+
+
+<footer>
+    <div class="container footer">
+        <h2 class="headings">CONTACTS</h2>
+        <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Email</a></li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>
